@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:id="@+id/textView3"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:text=" Des pertes ou des vols peuvent se produire et bien souvent les informations contenues dans les smartphones disparaissent. Backup Android est une application permettant sauvegarder vos messages, contacts et journal d'appels. "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="normal|bold|italic"
+        android:lineSpacingExtra="10sp"
+        android:typeface="serif"
+        android:textAlignment="viewStart"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+        android:textSize="20dp" />
+
+    <TextView
+        android:text="Conditions d'utilisations : Assurez vous d'avoir suffisamment de mémoire interne afin de pouvoir sauvegarder vos données. "
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/textView5"
+        android:paddingTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="viewStart"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:lineSpacingExtra="8sp"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+        android:layout_weight="0.19" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iconeaccueil"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.77"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

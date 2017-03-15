@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=" "
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choixsauvegarde"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sly.backupandroid.ChoixSauvegarde">
+
+    <CheckBox
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:padding="25dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox13"
+        android:layout_alignBaseline="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_toRightOf="@+id/checkBox4"
+        android:layout_toEndOf="@+id/checkBox4"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <CheckBox
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:padding="25dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox8"
+        android:layout_alignBaseline="@+id/checkBox3"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox13"
+        android:layout_alignStart="@+id/checkBox13" />
+
+    <CheckBox
+
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:padding="25dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5"
+        android:layout_alignBaseline="@+id/checkBox2"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8" />
+
+    <CheckBox
+        android:text="JOURNAL D'APPELS"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/checkBox4"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:button="@android:drawable/stat_sys_vp_phone_call"
+        tools:ignore="HardcodedText"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp" />
+
+    <CheckBox
+        android:text="CONTACTS"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/checkBox3"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:button="@android:drawable/btn_star_big_on"
+        tools:ignore="HardcodedText"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/checkBox4"
+        android:layout_alignEnd="@+id/checkBox4" />
+
+    <Button
+        android:text="Valider"
+        android:layout_height="wrap_content"
+        android:id="@+id/valider"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        style="@style/Widget.AppCompat.Button"
+
+        android:background="@drawable/buttonshaped"
+
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/checkBox13"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp" />
+
+    <CheckBox
+        android:text="MESSAGES"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/checkBox2"
+        android:background="@color/colorAccent"
+        android:button="@android:drawable/sym_action_email"
+        tools:ignore="HardcodedText,UnknownId"
+        style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+        android:duplicateParentState="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="14dp"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold"
+        android:checked="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/checkBox5"
+        android:layout_alignRight="@+id/checkBox3"
+        android:layout_alignEnd="@+id/checkBox3" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        tools:visibility="invisible"
+        android:layout_below="@+id/valider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

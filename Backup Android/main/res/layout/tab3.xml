@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:id="@+id/restaurer"
+    app:layout_collapseParallaxMultiplier="0.0">
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="449dp"
+    android:background="@color/colorPrimary"
+    tools:ignore="ObsoleteLayoutParam,UselessParent"
+        android:layout_weight="1.27"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+
+
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/barreRecherche"
+            android:layout_height="100dp" >
+
+        </SearchView>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="298dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/barreRecherche"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:text="Sauvegarde 3"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:text="Sauvegarde 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:text="Sauvegarde 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:text="Valider"
+                android:id="@+id/validerRestauration"
+                android:background="@drawable/buttonshaped"
+                tools:ignore="HardcodedText"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="20dp" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

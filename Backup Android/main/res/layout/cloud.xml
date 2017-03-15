@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView1"
+        android:layout_marginTop="61dp"
+        android:layout_alignTop="@+id/dropbox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:text="Go Dropbox"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dropbox1"
+        android:background="@drawable/buttonshaped"
+        tools:ignore="HardcodedText"
+        android:layout_alignBaseline="@+id/googledrive"
+        android:layout_alignBottom="@+id/googledrive"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:text="Go GoogleDrive"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshaped"
+        android:id="@+id/googledrive"
+
+        tools:ignore="HardcodedText,UnknownId"
+        android:layout_width="150dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
